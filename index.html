@@ -9,6 +9,14 @@
 		<link href="site.css" rel="stylesheet">
 	</head>
 	<body>
+			<button style="background-color:rgb(255,0,0);" onclick="send_red()">show red</button>
+			<button style="background-color:rgb(255,165,0);" onclick="send_yellow()">show yellow</button>
+			<button style="background-color:rgb(0,255,0);" onclick="send_green()">show green</button>
+			<button style="background-color:rgb(102,255,255);" onclick="send_aqua()">show aqua</button>
+			<button style="background-color:rgb(255,69,0);" onclick="send_orange()">show orange</button>
+			<button style="background-color:rgb(0,0,255);" onclick="send_blue()">show blue</button>
+			<button style="background-color:rgb(240,240,240); color:black;" onclick="send_white()">show white</button>
+
 		<figure>
 			<video id="video"></video>
 			<figcaption>Live Video</figcaption>
@@ -26,6 +34,11 @@
 		<script src="diff-cam-engine.js"></script>
 		<script src="site.js"></script>
 		<script src="mqtt.js"></script>
+
+
+
+
+
 
 
 	</body>

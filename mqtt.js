@@ -63,10 +63,55 @@ DiffCamEngine.init({
   }
 
   function capture(payload) {
-    if (payload.score > 500){
-    score.textContent = payload.score;
-    message = new Paho.MQTT.Message("1");
+    if (payload.score > 400){
+      score.textContent = payload.score;
+      message = new Paho.MQTT.Message("1");
+      message.destinationName = "/bettersense";
+      client.send(message);
+    }
+  }
+
+  function send_red(){
+    message = new Paho.MQTT.Message("red");
     message.destinationName = "/bettersense";
     client.send(message);
-	}
-}
+  }
+  function send_yellow(){
+    message = new Paho.MQTT.Message("yellow");
+    message.destinationName = "/bettersense";
+    client.send(message);
+  }
+  function send_green(){
+    message = new Paho.MQTT.Message("green");
+    message.destinationName = "/bettersense";
+    client.send(message);
+  }
+  function send_aqua(){
+    message = new Paho.MQTT.Message("aqua");
+    message.destinationName = "/bettersense";
+    client.send(message);
+  }
+
+  function send_orange(){
+    message = new Paho.MQTT.Message("orange");
+    message.destinationName = "/bettersense";
+    client.send(message);
+  }
+
+  function send_blue(){
+    message = new Paho.MQTT.Message("blue");
+    message.destinationName = "/bettersense";
+    client.send(message);
+  }
+
+
+  function send_white(){
+    message = new Paho.MQTT.Message("white");
+    message.destinationName = "/bettersense";
+    client.send(message);
+  }
+
+
+
+
+
