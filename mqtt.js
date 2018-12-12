@@ -63,7 +63,7 @@ DiffCamEngine.init({
   }
 
   function capture(payload) {
-    if (payload.score > 400){
+    if (payload.score > 300){
       score.textContent = payload.score;
       message = new Paho.MQTT.Message("1");
       message.destinationName = "/bettersense";
