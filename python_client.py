@@ -2,7 +2,7 @@ import paho.mqtt.client as mqtt
 import os, urlparse
 import serial #Serial imported for Serial communication
 import time #Required to use delay functions
-ArduinoSerial = serial.Serial('/dev/cu.usbmodem143110',9600)
+ArduinoSerial = serial.Serial('/dev/cu.usbmodem141110',9600)
 time.sleep(2)
 print (ArduinoSerial.readline())
 
